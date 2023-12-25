@@ -36,7 +36,7 @@ Our model has an accuracy of 0.98319 on the test set. The model will predict the
 ## Model 🌟
 The model you used was already trained. If you want to retrain your own model, you can run the following command:
 ```bash
-python train.py
+python bert_model.py
 ```
 Your model will be saved in `model/checkpoints`.If you want to
 verify the model, you should comment and uncomment two lines of code in line 273 and line 279 of `bert_model.py`
