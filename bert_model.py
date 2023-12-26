@@ -126,26 +126,13 @@ def train_model(_train_X, _train_y, config):
             # 生成横坐标（迭代次数，例如每个 epoch）
             iterations = list(range(1, len(loss_lis) + 1))
 
-            # 绘制损失曲线图
-            # plt.plot(iterations, loss_lis, label="Loss")
-            # plt.title("Loss Curve")
-            # plt.xlabel("Iterations (or Epochs)")
-            # plt.ylabel("Loss Value")
-            # plt.legend()
-            # # 保存损失曲线图，替换 'loss_curve.png' 为你想要的文件名和格式
-            # plt.savefig(
-            #     "result/loss_curve_"
-            #     + f"epoch{epoch}_lr{config.lr}_batch{config.batch_size}_wd{config.weight_decay}"
-            #     + ".png"
-            # )
-
-            # # 保存模型
-            # train_model_path = (
-            #     "checkpoints/bert_"
-            #     + f"epoch{epoch}_lr{config.lr}_batch{config.batch_size}_wd{config.weight_decay}"
-            #     + ".pt"
-            # )
-            # torch.save(bert_classification_model.state_dict(), train_model_path)
+            # 保存模型
+            train_model_path = (
+                "checkpoints/bert_"
+                + f"epoch{epoch}_lr{config.lr}_batch{config.batch_size}_wd{config.weight_decay}"
+                + ".pt"
+            )
+            torch.save(bert_classification_model.state_dict(), train_model_path)
 
             torch.cuda.empty_cache()
 

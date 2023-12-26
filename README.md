@@ -1,9 +1,9 @@
 # Sentiment Analysis of Mobile User Reviews
 
 
-## Authors 🛰️
+## Author 🛰️
 
-- [Nankai Univesity Yidan Sun](https://github.com/Thoams0211)
+- [Yidan Sun of Nankai University](https://github.com/Thoams0211)
 
 You can contact me by sending email to syd20021134@gmail.com or 2111438@mail.nankai.edu.cn
 
@@ -44,7 +44,7 @@ verify the model, you should comment and uncomment two lines of code in line 273
 ...
 # bert_classification_model = train_model(train_X, train_y, config)
 ...
-test_model("checkpoints/bert_epoch2_lr2e-05_batch8_wd0.0002.pt", test_X, test_y)
+test_model("checkpoints/bert_epoch2_lr2e-05_batch8_wd0.0001.pt", test_X, test_y)
 ...
 ```
 Log information will be saved in `result/test.log`.
