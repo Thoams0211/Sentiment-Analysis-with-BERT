@@ -1,4 +1,4 @@
-# Sentiment Analysis of Mobile User Reviews
+# Sentiment Analysis with BERT
 
 
 ## Author 🛰️
